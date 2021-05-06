@@ -51,11 +51,19 @@ export default function reducer(statePart = [], action = {}) {
       };
     case ADD_TAGS:
       return {
-        
+        ...statePart,
+        filters: {
+          ...statePart.filters,
+          tags: action.payload,
+        },
       };
     case REMOVE_TAGS:
       return {
-
+        ...statePart,
+        filters: {
+          ...statePart.filters,
+          tags: action.payload,
+        },
       };
     default:
       return statePart;
