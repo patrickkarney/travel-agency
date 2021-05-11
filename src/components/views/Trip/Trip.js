@@ -40,7 +40,7 @@ const Trip = ({error, name, image, cost, days, description, country, intro}) => 
           </Row>
         </Grid>
       </DetailsBox>
-      <OrderForm tripCost={'$15.00'} />
+      <OrderForm tripCost={cost} />
       <Grid>
         <Row>
           <Col xs={12}>
